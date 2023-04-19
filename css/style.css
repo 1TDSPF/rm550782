@@ -1,5 +1,6 @@
 @import url("./cabecalho.css");
 @import url("./conteudo.css");
+@import url("./breakpoint-629px.css");
 
 *{
     margin: 0;
@@ -16,21 +17,3 @@ html{
     font-size: 3rem;
     margin: 5% 0 ;
 }
-
-/*breakpoint*/
-
-@media(max-width: 629px){
-    .cabecalho{
-        flex-direction: column;
-    }
-
-    .cabecalho nav{
-        flex-wrap: nowrap;
-    }
-    .cabecalho a{
-        font-size: 3rem;
-        padding: 5% 0;
-    }
-}
-
-/*breakpoint*/

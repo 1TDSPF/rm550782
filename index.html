@@ -53,6 +53,53 @@
             <a href=""><img src="./img/social-2.png" alt="Logo Facebook"></a>
             <a href=""><img src="./img/social-3.png" alt="Logo Twitter"></a>
         </nav>
+        <div>
+            <form action="index.html" method="get" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="">Senha</label>
+                        <!--input type="email" name="txtEmail" id="idEmail" placeholder="Email"-->
+
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Precisa conter no mínimo 8 caracteres, pelo menos um em maiusculo, pelo menos um minusculo e pelo menos um número">
+                    </div>
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="txtnm" id="idNm" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="">Gravar Dados</label>
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="Gravar">
+                    </div>
+                    <!--div>
+                        <fieldset>
+                            <legend>Genêro</legend>
+                            <label for="idRdbM">Masculino</label>
+                            <input type="radio" name="rdb" id="idRdbM" value="m">
+                            <label for="idRdbF">Feminino</label>
+                            <input type="radio" name="rdb" id="idRdbF" value="f">
+                            <label for="idRdbO">Outro</label>
+                            <input type="radio" name="rdb" id="idRdbO">
+                        </fieldset>
+                    </div -->
+                    <div>
+                        <label for="">Genêro</label>
+                        <select name="seleGenero" id="idGenero">
+                            <option value="-" selected>Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </footer>
 </body>
 </html>

@@ -11,8 +11,8 @@
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador">
         <nav>
-            <a href="./index.html">Item-1</a>            
-            <a href="./info.html">Item-2</a>
+            <a href="./index.html">Home</a>            
+            <a href="./info.html">Info</a>
             <a href="#">Item-3</a>   
          </nav>
     </header>
@@ -48,54 +48,43 @@
 
     <footer class="rodape">
         <h2>Fale Conosco</h2>
-        <nav>
+        <!--nav>
             <a href=""><img src="./img/social-1.png" alt="Logo GitHub"></a>
             <a href=""><img src="./img/social-2.png" alt="Logo Facebook"></a>
             <a href=""><img src="./img/social-3.png" alt="Logo Twitter"></a>
-        </nav>
+        </nav-->
         <div>
-            <form action="index.html" method="get" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return true">
                 <fieldset>
-                    <legend>Contato</legend>
+                    <legend>Login</legend>
+                    <div>
+                        <label for="idEmail">E-mail</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="E-mail" required>
+                    </div>
                     <div>
                         <label for="">Senha</label>
-                        <!--input type="email" name="txtEmail" id="idEmail" placeholder="Email"-->
-
                         <input type="password" name="txtPass" id="idPass" placeholder="Pass" 
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Precisa conter no mínimo 8 caracteres, pelo menos um em maiusculo, pelo menos um minusculo e pelo menos um número">
                     </div>
                     <div>
-                        <label for="">Nome</label>
-                        <input type="text" name="txtnm" id="idNm" placeholder="Nome">
-                    </div>
-                    <div>
                         <label for="">Gravar Dados</label>
                         <input type="checkbox" name="chbGrava" id="idGrava" value="Gravar">
                     </div>
-                    <!--div>
-                        <fieldset>
-                            <legend>Genêro</legend>
-                            <label for="idRdbM">Masculino</label>
-                            <input type="radio" name="rdb" id="idRdbM" value="m">
-                            <label for="idRdbF">Feminino</label>
-                            <input type="radio" name="rdb" id="idRdbF" value="f">
-                            <label for="idRdbO">Outro</label>
-                            <input type="radio" name="rdb" id="idRdbO">
-                        </fieldset>
-                    </div -->
                     <div>
-                        <label for="">Genêro</label>
-                        <select name="seleGenero" id="idGenero">
-                            <option value="-" selected>Selecione uma opção</option>
-                            <option value="m">Masculino</option>
-                            <option value="f">Feminino</option>
-                            <option value="o">Outro</option>
-                        </select>
+                        <fieldset >
+                            <legend>Gênero</legend>
+                            <select name="seleGenero" id="idGenero">
+                                <option value="-" selected>Selecione uma opção</option>
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option>
+                                <option value="o">Outro</option>
+                            </select>
+                        </fieldset>
                     </div>
                     <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                        <button type="submit">Login</button>
+                        <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
             </form>

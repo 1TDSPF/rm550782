@@ -47,3 +47,35 @@ td[colspan]{
     text-align: center;
     font-weight: 700;
 }
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape > div{
+    display: flex;
+}
+
+.rodape div form{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.rodape div form input[type=email], [type=password]{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto 1.5% auto;
+}
+
+.rodape div form input[type=checkbox]{  
+    margin: 2% auto;
+}
+
+.rodape div form select{  
+    display: block;
+    margin: 0 auto 2% auto;
+}
+
+

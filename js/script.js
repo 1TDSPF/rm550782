@@ -105,13 +105,35 @@
 //     })
 // })
 
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10];
-console.log(nr1);
-console.log(nr2);
-//CONCATENANDO ARRAYS COM O OPERADOR SPREAD( ... )
-let nr3 = [...nr1,...nr2];
-// //Imprimindo o Array concatenado com forEach
-nr3.forEach((nr)=>{
-    console.log("ITEM DO NOVO ARRAY : " + nr);    
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
+// console.log(nr1);
+// console.log(nr2);
+// //CONCATENANDO ARRAYS COM O OPERADOR SPREAD( ... )
+// let nr3 = [...nr1,...nr2];
+// // //Imprimindo o Array concatenado com forEach
+// nr3.forEach((nr)=>{
+//     console.log("ITEM DO NOVO ARRAY : " + nr);    
+// });
+
+//convertendo HTMLCollection em Arrays
+//convertendo HTMLCollection em Arrays
+//convertendo HTMLCollection em Arrays
+// const imgElements = document.getElementsByTagName("img");
+// console.log(imgElements);
+// const imgElementsArray = [...imgElements];
+// imgElementsArray.forEach((img)=>{
+//     img.setAttribute("width", "3%");
+// });
+
+const aElements = [...document.getElementsByTagName("a")];
+console.log(aElements);
+aElements.forEach((a)=>{
+    let textoDoA = a.textContent;
+
+    if(textoDoA == "Home" || textoDoA == "Info" || textoDoA == "Item-3"){
+        a.setAttribute("style", "background-color:#ff0000")
+    }
+
+    
 });

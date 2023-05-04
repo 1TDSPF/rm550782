@@ -7,7 +7,7 @@ if(nome == "Kayque"){
 console.log(nome);*/
 
 //recuperando um elemento button que está no index.html
-const buttonElement = document.getElementById("meu-btn");
+/*const buttonElement = document.getElementById("meu-btn");
 
 //atrelando um evento de clique ao button que foi recuperado
 buttonElement.addEventListener("click", function(){
@@ -41,5 +41,51 @@ h2.addEventListener("click", function(){
 
     this.setAttribute("style", "color:white; background-color:purple;");
 
-})
+})*/
 
+//Declarando arrys
+
+let frutas = ["maça", "laranja", "banana", "uva", "kiwi", "caqui"];
+
+console.log("Tamanho do array: ", frutas.length);
+
+console.log("Pegando um dos itens do array:", frutas[0]);
+console.log("Pegando um dos itens do array:", frutas[1]);
+console.log("Pegando um dos itens do array:", frutas[2]);
+console.log("Pegando um dos itens do array:", frutas[3]);
+console.log("Pegando um dos itens do array:", frutas[4]);
+console.log("Pegando um dos itens do array:", frutas[5]);
+
+//Itereando o array com estruturas de repetição
+//forEach
+frutas.forEach( (fruta)=>{
+    console.log("Pegando um dos itens do aray com forEach:", fruta);
+});
+
+//Adicionando um item ao final do array com o método push(item)
+frutas.push("melão");
+console.table(frutas);
+
+//Adicionando um item no ínicio do array com o método unshift(item)
+frutas.unshift("melancia");
+console.table(frutas);
+
+//Removendo um item do final do array com o método pop()
+frutas.pop();
+console.table(frutas);
+
+//Removendo um item do ínicio do array com o método shift()
+frutas.shift();
+console.table(frutas);
+
+//Localizando um determinado item dentro do array com o método indexOf(item)
+let inidce = frutas.indexOf("banana");
+console.log("Índice do item que foi localizado", inidce);
+console.log("Item que foi localizado atráves do index", frutas[indice]);
+
+//Utilizando os métodos, slice(indiceItem, quantidadeRemoções) para remover um item do array passando sua localizaçao através do indice.
+//Localizando um determinando item dentro do array com o método indexOf(item);
+let indice = frutas.indexOf("kiwi");
+console.log("ITEM QUE ESTAVA NO LOCAL ANTES DA REMOÇÃO : " + frutas[indice]);
+frutas.splice(indice,1);
+console.log("ITEM QUE FICOU NO LOCAL APÓS A REMOÇÃO : " + frutas[indice]);

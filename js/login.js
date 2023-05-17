@@ -1,3 +1,4 @@
+
 //CRIANDO OBJETOS
 const usuario1 = {
     usuarioEmail : "jaul@email.com",
@@ -14,7 +15,36 @@ const usuario2 = {
 }
 
 //CRIAR UMA LISTA DE OBJETOS
-let listaDeUsuarios = [];
+let listaDeUsuarios = [
+    {
+        nomeCompleto : "Jaú da Selva",
+        usuarioEmail : "jau@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Paulo das Couves",
+        usuarioEmail : "paulo@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "José da Silva",
+        usuarioEmail : "jose@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "Maria do Socorro",
+        usuarioEmail : "jau@email.com",
+        usuarioSenha : "123456"
+    },
+    {
+        nomeCompleto : "André da Silva",
+        usuarioEmail : "andre@email.com",
+        usuarioSenha : "123456"
+    }
+];
+
+localStorage.setItem("listaUser", JSON.stringify(listaDeUsuarios))  
+
 listaDeUsuarios.push(usuario1);
 listaDeUsuarios.push(usuario2);
 console.log(listaDeUsuarios);
